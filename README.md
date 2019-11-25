@@ -129,6 +129,7 @@ Para comodidad del usuario, se han añadido distintos Sudokus por resolver que e
 
 *Importante* El programa actualmente acepta dos distintos formatos de entrada de Sudoku:
 1. El programa podrá diferenciar y hará uso de los valores que realmente le interesan, sustituyendo el punto (.) por 0 para tomarlos como valores nulos.
+
    ![ExampleInput](/docs/exampleInputSudoku.png)
 
 2. El programa tomará los 0 como valores vacíos y creará las tripletas necesarias para consturir el sudoku de 9x9
