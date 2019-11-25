@@ -1,4 +1,4 @@
-# *[Poner aquí el Título del Proyecto]*
+# *Sudoku 9x9 Solver*
 ---
 #### Materia: *Análisis y Diseño de Algoritmos (TC2017)*
 
@@ -64,7 +64,7 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 En la siguiente imagen, se muestra un Sudoku de 9x9 que tiene asignados los valores de las casillas, señalando en distintos colores las reglas que se deben de seguir, así como también la representación de los grupos.
 
-![SudokuExplained](/Images/1.png)
+![SudokuExplained](/images/1.png)
 
 Por ejemplo: Dada la casilla 10
 - ¿A qué grupos pertence?: 1 (renglón), 10, (columna), 22 (casilla)
