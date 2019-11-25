@@ -7,8 +7,8 @@
 ##### Campus: *Santa Fe*
 
 ##### Integrantes:
-1. *[Poner aquí Nombre y Apellidos del integrante 1]* *[Matrícula]*
-2. *[Poner aquí Nombre y Apellidos del integrante 2]* *[Matrícula]*
+1. *Daniela Vignau León* *A01021698*
+2. *Allan Sánchez Iparrazar* *A01379951*
 
 ---
 ## 1. Aspectos generales
@@ -47,7 +47,14 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 ## 2. Descripción del problema
 
-*[Incluya aquí la descripción del problema a resolver.]*
+“Sudoku (en japonés: 数独, sūdoku) es un juego matemático que se inventó a finales de la década de 1970, adquirió popularidad en Japón en la década de 1980 y se dio a conocer en el ámbito internacional en 2005 cuando numerosos periódicos empezaron a publicarlo en su sección de pasatiempos.” (Wikipedia, 2019)
+
+Sudoku es un juego de un solo jugador donde se tienen n x n celdas y algunas de ellas están llenadas con un número del 1 a n. Para ganar, se tienen que llenar las celdas que están vacías siguiendo ciertas reglas:
+
+1. Cada número debe aparecer una sola vez por renglón
+2. Cada número debe aparecer una sola vez por columna
+3. Cada número debe aparecer una sola vez por *subgrid*
+   - Por subgrid se puede pensar como un sudoku individual (debe de seguir las mismas reglas) pero de menor tamaño. Por ejemplo, en un Sudoko de 9x9, existen subgirds de 3x3
 
 ## 3. Solución secuencial
 
@@ -64,7 +71,7 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 En la siguiente imagen, se muestra un Sudoku de 9x9 que tiene asignados los valores de las casillas, señalando en distintos colores las reglas que se deben de seguir, así como también la representación de los grupos.
 
-![SudokuExplained](/images/1.png)
+![SudokuExplained](/docs/1.png)
 
 Por ejemplo: Dada la casilla 10
 - ¿A qué grupos pertence?: 1 (renglón), 10, (columna), 22 (casilla)
@@ -107,8 +114,24 @@ A todo esto, significa que un Sudoku puede ser resuelto utilizando un método de
 
 ## 9. Guía paso a paso
 
-*[Incluya aquí la guía para la ejecución de los códigos.]*
+Se deberá de descargar la carpeta y descomprimirla en el lugar deseado. Posteriormente, se deberá de acceder a ella dentro de la línea de comandos. Se deberá de ver la siguiente estructura:
+- docs
+- secuencial
+- paralelo
 
+**Para el código secuencial**
+1. Ingresar a la carpeta *secuencial*
+2. Ingresar el comando *g++ sudoku.cpp -o sudoku* y presionar enter para que el programa compile y se cree un ejecutable
+3. Ingresar * sudoku < sudokuResolver.txt *: Esto le indicará al programa el archivo de texto que debe de leer y despúes de presionar enter, el sudoku resuelto aparecerá en la línea de comandos.
+    - Si se quiere almacenar el sudoku resuelto en un archivo de texto, se deberá de ingresar el siguiente comando: *sudoku < sudokuResolver.txt > sudokuResuelto.txt*. Al presionar enter, una vez que el programa termine, aparecerá dentro de la carpeta un nuevo archivo con el nombre especificado anteriormente.
+Para comodidad del usuario, se han añadido distintos Sudokus por resolver que están listos para ser usados por el usuario. 
+
+*Importante* El programa actualmente acepta dos distintos formatos de entrada de Sudoku:
+1. El programa podrá diferenciar y hará uso de los valores que realmente le interesan, sustituyendo el punto (.) por 0 para tomarlos como valores nulos.
+   ![ExampleInput](/docs/exampleInputSudoku.png)
+
+2. El programa tomará los 0 como valores vacíos y creará las tripletas necesarias para consturir el sudoku de 9x9
+    003020600900305001001806400008102900700000008006708200002609500800203009005010300
 ## 10. Referencias
 
 *[Incluya aquí las referencias a sitios de interés y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
