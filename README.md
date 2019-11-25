@@ -82,7 +82,7 @@ Por ejemplo: Dada la casilla 10
    - **DeleteVal(int *k*, int *val*):** Eliminar *v* de los posibles valores de la celda *k*. Existen tres posibilidades para eliminar:
         - Si hay 0 valores posibles, entonces existe un error y se regresa un False para descartar la rama
         - Si hay 1 valor posible, entonces ese es el valor (*v2*) que va en la celda (*k*). Para esto, se deberá eliminar el valor *v2* de todos sus vecinos para evitar repetidos
-        - Si solo queda una celda (*k2*) en los grupos de la celda, con valor *v* (el de entrada) solo se debe de asignar en la celda *k2* el valor de *v*
+        - Si al haber eliminado una posibilidad al asignar un valor en cierta casilla y solo hay otro lugar donde se puede asignar el valor restante, se asigna en la nueva casilla
 
 4. Un árbol de posibilidades se irá creando conforme se realicen diferentes operaciones; en el árbol se propagarán las restricciones de lo que se le indicó en un inicio, y si en algún punto una rama no cumple con las restricciones, se regresará un False para indicar que por ese camino no es y se descarta la rama completa.
 
