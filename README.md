@@ -148,12 +148,15 @@ Se deberá de descargar la carpeta y descomprimirla en el lugar deseado. Posteri
 Para comodidad del usuario, se han añadido distintos Sudokus por resolver que están listos para ser usados por el usuario. 
 
 *Importante* El programa actualmente acepta dos distintos formatos de entrada de Sudoku:
-1. El programa podrá diferenciar y hará uso de los valores que realmente le interesan, sustituyendo el punto (.) por 0 para tomarlos como valores nulos.
+1. 
 
-   ![ExampleInput](/docs/exampleInputSudoku.png)
+![ExampleInput](/docs/exampleInputSudoku.png)
 
-2. El programa tomará los 0 como valores vacíos y creará las tripletas necesarias para consturir el sudoku de 9x9
-    003020600900305001001806400008102900700000008006708200002609500800203009005010300
+El programa podrá diferenciar y hará uso de los valores que realmente le interesan, sustituyendo el punto (.) por 0 para tomarlos como valores nulos.
+
+2. **003020600900305001001806400008102900700000008006708200002609500800203009005010300**
+
+El programa tomará los 0 como valores vacíos y creará las tripletas necesarias para consturir el sudoku de 9x9
     
 ## 10. Referencias
 
