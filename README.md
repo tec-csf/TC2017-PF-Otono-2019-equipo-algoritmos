@@ -123,7 +123,7 @@ Se deberá de descargar la carpeta y descomprimirla en el lugar deseado. Posteri
 **Para el código secuencial**
 1. Ingresar a la carpeta *secuencial*
 2. Ingresar el comando *g++ sudoku.cpp -o sudoku* y presionar enter para que el programa compile y se cree un ejecutable
-3. Ingresar * sudoku < sudokuResolver.txt *: Esto le indicará al programa el archivo de texto que debe de leer y despúes de presionar enter, el sudoku resuelto aparecerá en la línea de comandos.
+3. Ingresar *sudoku < sudokuResolver.txt*: Esto le indicará al programa el archivo de texto que debe de leer y despúes de presionar enter, el sudoku resuelto aparecerá en la línea de comandos.
     - Si se quiere almacenar el sudoku resuelto en un archivo de texto, se deberá de ingresar el siguiente comando: *sudoku < sudokuResolver.txt > sudokuResuelto.txt*. Al presionar enter, una vez que el programa termine, aparecerá dentro de la carpeta un nuevo archivo con el nombre especificado anteriormente.
 Para comodidad del usuario, se han añadido distintos Sudokus por resolver que están listos para ser usados por el usuario. 
 
