@@ -105,6 +105,10 @@ La complejidad del algoritmo secuencial es de: O(n2) al eliminar los valores pue
 
 ## 6. Tabla de resultados
 
+Para poder comparar correctamente ambos algoritmos, se utilzaron 5 diferentes sudokus de entarada, los cuales iban incrementando su dificultad. Se resolvieron 2 Sudokus, los cuales fueron propuestos por un matemático filipino, que tienen la fama de ser muy difíciles. 
+
+![VisualSudoku](/docs/inputSudokuVisual.png)
+
 **Secuencial**
 
 | Dificultad de Sudoku | Tiempo de ejecución |
