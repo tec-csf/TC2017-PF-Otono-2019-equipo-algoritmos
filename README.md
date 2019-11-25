@@ -148,8 +148,9 @@ Se deberá de descargar la carpeta y descomprimirla en el lugar deseado. Posteri
 Para comodidad del usuario, se han añadido distintos Sudokus por resolver que están listos para ser usados por el usuario. 
 
 *Importante* El programa actualmente acepta dos distintos formatos de entrada de Sudoku:
-1. 
 
+
+1. 
 ![ExampleInput](/docs/exampleInputSudoku.png)
 
 El programa podrá diferenciar y hará uso de los valores que realmente le interesan, sustituyendo el punto (.) por 0 para tomarlos como valores nulos.
