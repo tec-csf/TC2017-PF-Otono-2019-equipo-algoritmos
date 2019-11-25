@@ -64,6 +64,8 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 En la siguiente imagen, se muestra un Sudoku de 9x9 que tiene asignados los valores de las casillas, señalando en distintos colores las reglas que se deben de seguir, así como también la representación de los grupos.
 
+![SudokuExplained](/Images/1.png)
+
 Por ejemplo: Dada la casilla 10
 - ¿A qué grupos pertence?: 1 (renglón), 10, (columna), 22 (casilla)
 - ¿Vecinos de casilla #10?: 0, 1, 2, 9, 11, 12, 13, 14, 15, 16, 17, 28, 37, 46, 55, 64, 72
@@ -80,7 +82,7 @@ Por ejemplo: Dada la casilla 10
 Al compilar un cierto Sudoku con el programa como se encuentra en este momento, podría llegar a funcionar si, sólo si, existe una sola posibilidad para cada celda. De lo contrario se deberá de añadir lo siguiente: 
 1. Se creará una función que escogerá un valor aleatorio dentro de las distintas posibilidades que pudiera tener una celda de un Sudoku que aún está sin resolver. Creará un nuevo “árbol” de posibilidades, que irá borrando ramas en cuanto estás dejen de cumplir con las reglas. Se deberá de empezar con las celdas que tienen menores posibilidades ya que al descartar una de sus ramas, rápidamente se descartan los valores en las demás ramas.
 
-A todo esto, significa que Sudoku puede ser resuelto utilizando un método de “Backtracking”, pues busca una solución y se regresa si ésta no es válida, ya que esto significa que nos hemos equivocado y busca en otra dirección utilizando otros valores.
+A todo esto, significa que un Sudoku puede ser resuelto utilizando un método de “Backtracking”, pues busca una solución y se regresa si ésta no es válida, ya que esto significa que nos hemos equivocado y busca en otra dirección utilizando otros valores.
 
 
 ## 4. Análisis de los inhibidores del paralelismo
