@@ -93,6 +93,8 @@ A todo esto, significa que un Sudoku puede ser resuelto utilizando un método de
 
 La complejidad del algoritmo secuencial es de: O(n2) al eliminar los valores pues es ahí donde se aplican las reglas
 
+El código se puede visualizar haciendo click al siguiente link: https://github.com/tec-csf/TC2017-PF-Otono-2019-equipo-algoritmos/tree/master/secuencial
+
 ## 4. Análisis de los inhibidores del paralelismo
 
 *[Incluya aquí el análisis de los inhibidores presentes en su problema, así como la solución a los mismos.]*
