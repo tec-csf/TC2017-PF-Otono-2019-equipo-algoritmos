@@ -105,11 +105,29 @@ El código se puede visualizar haciendo click al siguiente link: https://github.
 
 ## 6. Tabla de resultados
 
-*[Incluya aquí la tabla con los resultados de las mediciones.]*
+**Secuencial**
+
+| Dificultad de Sudoku | Tiempo de ejecución |
+| :------------------: | :-----------------: |
+|      Easy - 1        |    0.02 segundos    |
+|      Easy - 2        |     0.0 segundos    |
+|     Hard Inkala 1    |    0.002 segundos   |
+|     Hard Inkala 2    |   0.005 segundos    |
+|      Impossible   |    0.027 segundos    |
+
+**Paralelo**
+
+| Dificultad de Sudoku | Tiempo de ejecución |
+| :------------------: | :-----------------: |
+|      Easy - 1        |    0000000000000000 |
+|      Easy - 2        |    0000000000000000 |
+|     Hard Inkala 1    |    0000000000000000 |
+|     Hard Inkala 2    |    0000000000000000 |
+|      Impossible      |    0000000000000000 |
 
 ## 7. Gráfica(s) comparativa(s)
 
-*[Incluya aquí la(s) gráfica(s) comparativa(s).]*
+![Tiempos de Ejecución S vs P](/docs/SecuencialVSParalelo.png)
 
 ## 8. Interpretación de los resultados
 
