@@ -91,6 +91,7 @@ Al compilar un cierto Sudoku con el programa como se encuentra en este momento, 
 
 A todo esto, significa que un Sudoku puede ser resuelto utilizando un método de “Backtracking”, pues busca una solución y se regresa si ésta no es válida, ya que esto significa que nos hemos equivocado y busca en otra dirección utilizando otros valores.
 
+La complejidad del algoritmo secuencial es de: O(n2) al eliminar los valores pues es ahí donde se aplican las reglas
 
 ## 4. Análisis de los inhibidores del paralelismo
 
@@ -132,6 +133,10 @@ Para comodidad del usuario, se han añadido distintos Sudokus por resolver que e
 
 2. El programa tomará los 0 como valores vacíos y creará las tripletas necesarias para consturir el sudoku de 9x9
     003020600900305001001806400008102900700000008006708200002609500800203009005010300
+    
 ## 10. Referencias
 
-*[Incluya aquí las referencias a sitios de interés y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+1. Fernandez, P. [Pau Fernandez] (2013, enero 9). *C++ Solucionador de Sudokus 1-5/5*. [Archivo de video]. Recuperado el 22 de noviembre de 2019 de: https://www.youtube.com/watch?v=p7mjDQgbKYM
+2. Norvig, P. (s.f.). *Solving Every Sudoku Puzzle* Recuperado el 22 de noviembre de 2019 de: http://norvig.com/sudoku.html
+3. Overmiller, D. [Dustin Overmiller] (2013, marzo 16). *Sudoku Parallel Approach* [Archivo de video]. Recuperado el 22 de noviembre de 2019 de: https://www.youtube.com/watch?v=S9ZBsgsj31w
+4. Sankar, S. (2014). *Parallelized Sudoku Solving Algorithm Using OpenMP*. Recuperado el 22 de noviembre de 2019 de: https://cse.buffalo.edu/faculty/miller/Courses/CSE633/Sankar-Spring-2014-CSE633.pdf
