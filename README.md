@@ -181,7 +181,7 @@ Clonamos el repositorio a la carpeta de preferencia:
  
 Nos posicionamos en la carpeta de nuestro repositorio:
  
-> cd TC2017-PF-Otono-2019-404
+> cd TC2017-PF-Otono-2019-equipo-algoritmos
  
 **Para el código secuencial**
  
