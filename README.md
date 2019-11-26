@@ -136,6 +136,7 @@ Para poder comparar correctamente ambos algoritmos, se utilzaron 5 diferentes su
 |     Hard Inkala 2    |    0.00000005 segundos|
 |      Impossible      |    0.00000006 Segundo's |
 
+
 ![VisualSudoku](/docs/NumberOfThreads.png)
 
 ![VisualSudoku](/docs/BalancingOptions.png)
@@ -154,7 +155,7 @@ Al correr ambos programas con el mismo set de datos nos percatamos que el proces
 
 Clonamos el repositorio a la carpeta de preferencia:
  
-> git clone https://github.com/tec-csf/TC2017-PF-Otono-2019-equipo-algoritmos.git
+> git clone https://github.com/tec-csf/TC2017-PF-Otono-2019-equipo-algoritmos
  
 Nos posicionamos en la carpeta de nuestro repositorio:
  
