@@ -134,7 +134,7 @@ Para poder comparar correctamente ambos algoritmos, se utilzaron 5 diferentes su
 |      Easy - 2        |    0.00000005 segundos |
 |     Hard Inkala 1    |    0.00000006  segundos |
 |     Hard Inkala 2    |    0.00000005 segundos|
-|      Impossible      |    0.00000006 Segundo's |
+|      Impossible      |    0.00000006 segundos |
 
 
 ## 7. Gráfica(s) comparativa(s)
