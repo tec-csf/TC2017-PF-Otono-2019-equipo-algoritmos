@@ -154,7 +154,7 @@ Al correr ambos programas con el mismo set de datos nos percatamos que el proces
 
 Clonamos el repositorio a la carpeta de preferencia:
  
-> git clone https://github.com/tec-csf/TC2017-PF-Otono-2019-404
+> git clone https://github.com/tec-csf/TC2017-PF-Otono-2019-equipo-algoritmos.git
  
 Nos posicionamos en la carpeta de nuestro repositorio:
  
