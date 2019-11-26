@@ -139,7 +139,29 @@ Para poder comparar correctamente ambos algoritmos, se utilzaron 5 diferentes su
 
 ![VisualSudoku](/docs/NumberOfThreads.png)
 
+*Cambiaando opciones de balanceo*
+
 ![VisualSudoku](/docs/BalancingOptions.png)
+
+*Auto*
+
+![VisualSudoku](/docs/Auto.png)
+
+*Guided*
+
+![VisualSudoku](/docs/Guided.png)
+
+*Static*
+
+![VisualSudoku](/docs/Static.png)
+
+*Dynamic*
+
+![VisualSudoku](/docs/Dynamic.png)
+
+*Average*
+
+![VisualSudoku](/docs/Average.png)
 
 ## 7. Gráfica(s) comparativa(s)
 
