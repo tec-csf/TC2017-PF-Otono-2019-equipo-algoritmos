@@ -219,7 +219,7 @@ Nos posicionamos en la carpeta paralela:
  
 Compilamos nuestro programa:
  
-> g++ sudoku.cpp -o sudoku
+> g++ -fopenmp sudoku.cpp -o sudoku
  
 Para que la solución secuencial resuelva un puzzle se le tiene que indicar el archivo de texto que debe de leer por medio del siguiente comando:
  
