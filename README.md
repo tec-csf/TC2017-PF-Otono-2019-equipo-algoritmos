@@ -211,6 +211,34 @@ Si se quiere almacenar el sudoku resuelto en un archivo de texto, se deberá de 
 Se han añadido distintos Sudokus por resolver que están listos para ser usados por el usuario. 
 
 
+**Para el código paralelo**
+
+Nos posicionamos en la carpeta paralela:
+ 
+> cd paralela
+ 
+Compilamos nuestro programa:
+ 
+> g++ sudoku.cpp -o sudoku
+ 
+Para que la solución secuencial resuelva un puzzle se le tiene que indicar el archivo de texto que debe de leer por medio del siguiente comando:
+ 
+> ./sudoku < sudokuResolver.txt
+ 
+O bien: 
+ 
+> ./sudoku < impossible-1.txt
+ 
+Para que resuelva otro. 
+ 
+Si se quiere almacenar el sudoku resuelto en un archivo de texto, se deberá de ingresar el siguiente comando: 
+ 
+> ./sudoku < sudokuResolver.txt > sudokuResuelto.txt. 
+ 
+ 
+Se han añadido distintos Sudokus por resolver que están listos para ser usados por el usuario. 
+
+
 *Importante* El programa actualmente acepta dos distintos formatos de entrada de Sudoku:
 
 
