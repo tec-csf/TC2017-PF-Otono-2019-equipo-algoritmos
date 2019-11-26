@@ -149,7 +149,7 @@ Para poder comparar correctamente ambos algoritmos, se utilzaron 5 diferentes su
 
 *Auto*
 
-![VisualSudoku](/docs/Auto.png)
+![VisualSudoku](/docs/Auto2.png)
 
 *Guided*
 
