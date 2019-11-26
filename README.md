@@ -97,11 +97,18 @@ La complejidad del algoritmo secuencial es de: O(n2) al eliminar los valores pue
 
 ## 4. Análisis de los inhibidores del paralelismo
 
-*[Incluya aquí el análisis de los inhibidores presentes en su problema, así como la solución a los mismos.]*
+Al momento de querer paralelizar este problema, nos dimos cuenta de que había muchos ciclos for en los cuales se pudiera implementar la librería Open MP para sacarle provecho a los hilos de procesamiento de nuestras PC y resolver el problema en una cantidad aún menor de tiempo. 
+ 
+Nuestro primer tope fue el darnos cuenta de que no podíamos paralelizar todos los ciclos for de la solución, sino que debíamos limitarnos a escoger los ciclos en los cuales el procesamiento se iba a ser exhausto. 
+ 
+Notamos que una gran parte del procesamiento se concentraba en cargar el archivo, para lo cual hicimos uso de #pragma omp parallel para distribuir las columnas a través de los hilos de procesamiento y, de esta forma, lograra resolver más rápido el sudoku puzzle.
+
 
 ## 5. Solución paralela
 
-*[Incluya aquí la descripción de la solución paralela.]*
+Nuestra solución se centra en paralelizar la forma en la que el programa procesa la entrada para crear la matriz. Lo hacemos dividiendo el número de columnas entre el número de hilos de procesamiento disponibles y así acelerar su procesamiento. 
+
+[Codigo Paralelo](https://github.com/tec-csf/TC2017-PF-Otono-2019-equipo-algoritmos/tree/master/paralelo)
 
 ## 6. Tabla de resultados
 
@@ -123,11 +130,15 @@ Para poder comparar correctamente ambos algoritmos, se utilzaron 5 diferentes su
 
 | Dificultad de Sudoku | Tiempo de ejecución |
 | :------------------: | :-----------------: |
-|      Easy - 1        |    0000000000000000 |
-|      Easy - 2        |    0000000000000000 |
-|     Hard Inkala 1    |    0000000000000000 |
-|     Hard Inkala 2    |    0000000000000000 |
-|      Impossible      |    0000000000000000 |
+|      Easy - 1        |     0.00000004 segundos |
+|      Easy - 2        |    0.00000005 segundos |
+|     Hard Inkala 1    |    0.00000006  segundos |
+|     Hard Inkala 2    |    0.00000005 segundos|
+|      Impossible      |    0.00000006 Segundo's |
+
+![VisualSudoku](/docs/NumberOfThreads.png)
+
+![VisualSudoku](/docs/BalancingOptions.png)
 
 ## 7. Gráfica(s) comparativa(s)
 
@@ -135,21 +146,47 @@ Para poder comparar correctamente ambos algoritmos, se utilzaron 5 diferentes su
 
 ## 8. Interpretación de los resultados
 
-*[Incluya aquí la interpretación de los resultados.]*
+Al correr ambos programas con el mismo set de datos nos percatamos que el procesamiento en paralelo sacó ventaja de la solución secuencial. La diferencia no es tan perceptible, pues ante nuestros ojos ambas soluciones resolvían el puzzle al instante, pero sigue siendo más rápido.
+ 
+¿Cómo se notaría más esta ventaja? La ventaja vendría cuando se tuviera que procesar una matriz nxn. Considerando n un número mucho mayor a 9, la cantidad de elementos de una matriz a procesar serían basta y es ahí donde nuestro programa sacaría la ventaja. 
 
 ## 9. Guía paso a paso
 
-Se deberá de descargar la carpeta y descomprimirla en el lugar deseado. Posteriormente, se deberá de acceder a ella dentro de la línea de comandos. Se deberá de ver la siguiente estructura:
-- docs
-- secuencial
-- paralelo
-
+Clonamos el repositorio a la carpeta de preferencia:
+ 
+> git clone https://github.com/tec-csf/TC2017-PF-Otono-2019-404
+ 
+Nos posicionamos en la carpeta de nuestro repositorio:
+ 
+> cd TC2017-PF-Otono-2019-404
+ 
 **Para el código secuencial**
-1. Ingresar a la carpeta *secuencial*
-2. Ingresar el comando *g++ sudoku.cpp -o sudoku* y presionar enter para que el programa compile y se cree un ejecutable
-3. Ingresar *sudoku < sudokuResolver.txt*: Esto le indicará al programa el archivo de texto que debe de leer y despúes de presionar enter, el sudoku resuelto aparecerá en la línea de comandos.
-    - Si se quiere almacenar el sudoku resuelto en un archivo de texto, se deberá de ingresar el siguiente comando: *sudoku < sudokuResolver.txt > sudokuResuelto.txt*. Al presionar enter, una vez que el programa termine, aparecerá dentro de la carpeta un nuevo archivo con el nombre especificado anteriormente.
-Para comodidad del usuario, se han añadido distintos Sudokus por resolver que están listos para ser usados por el usuario. 
+ 
+Nos posicionamos en la carpeta secuencial:
+ 
+> cd secuencial
+ 
+Compilamos nuestro programa:
+ 
+> g++ sudoku.cpp -o sudoku
+ 
+Para que la solución secuencial resuelva un puzzle se le tiene que indicar el archivo de texto que debe de leer por medio del siguiente comando:
+ 
+> ./sudoku < sudokuResolver.txt
+ 
+O bien: 
+ 
+> ./sudoku < impossible-1.txt
+ 
+Para que resuelva otro. 
+ 
+Si se quiere almacenar el sudoku resuelto en un archivo de texto, se deberá de ingresar el siguiente comando: 
+ 
+> ./sudoku < sudokuResolver.txt > sudokuResuelto.txt. 
+ 
+ 
+Se han añadido distintos Sudokus por resolver que están listos para ser usados por el usuario. 
+
 
 *Importante* El programa actualmente acepta dos distintos formatos de entrada de Sudoku:
 
