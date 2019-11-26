@@ -141,7 +141,7 @@ Para poder comparar correctamente ambos algoritmos, se utilzaron 5 diferentes su
 
 ![Tiempos de Ejecución S vs P](/docs/SecuencialVSParalelo.png)
 
-![VisualSudoku](/docs/NumberOfThreads.png)
+![VisualSudoku](/docs/NumberOfThreads2.png)
 
 *Cambiando opciones de balanceo*
 
