@@ -53,7 +53,7 @@ public:
 
 vector < vector <int> > Sudoku::groups(27), Sudoku::groupsOf(81), Sudoku::neighbors(81);
 
-void Sudoku::initialize() {  
+void Sudoku::initialize() {
   int i = 0, j = 0, x = 0, num = 9, k = 0 , num_grupos = 3;
   int nhilos = omp_get_num_threads();
   int id = omp_get_thread_num();
@@ -227,10 +227,11 @@ int main() {
   t_inicial = omp_get_wtime();
 
   Sudoku::initialize();
-  
+
   t_final = omp_get_wtime();
-  printf("Inicializacion tardo: %.5f\n", t_final - t_inicial);
- 
+  double final_time = (double)(t_final - t_inicial)/(double)(CLOCKS_PER_SEC);
+  cout <<"\nTime taken by program is: " << final_time << " seconds \n";
+
   string s, line;
   while(getline(cin, line)) s += line;
   Sudoku *S = solve(new Sudoku(s));
